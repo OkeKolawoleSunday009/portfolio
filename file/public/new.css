@@ -1,0 +1,129 @@
+:root{
+    --green:#191786;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    
+    transition: all .2s linear;
+    /* background-color: #192a56; */
+   
+}
+section{
+    display:grid;
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "footer footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 0.2fr 0fr   ;
+   }
+}
+ section .container{
+    margin: auto;
+    width: 80%;
+    border: 0.5px solid rgb(24, 23, 23);
+    border-radius: 5px; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background:  #8f8e8e;
+
+}
+
+
+section .container .firstbox{
+    /* /display: flex; */
+    max-width: 17rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:  #f5f1f1;
+    
+}
+section .container .secondbox{
+    /* /display: flex; */
+    max-width: 50rem;
+    padding: 10px;
+    height: 250px;
+    border-radius: 5px;
+    background:  #eeebeb;
+   
+}
+ section .container .secondbox .alltogether{
+   display:flex
+}
+  section .container .thirdbox .alltogether{
+    display:flex
+    }
+section .container .secondbox .spans, section .container .thirdbox .spans{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+section .container .secondbox .prog, section .container .thirdbox .prog{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+section .container .thirdbox{
+    /* /display: flex; */
+    width: 16rem;
+    padding: 10px;
+    height: 150px;
+    border-radius: 5px;
+    background:  #eeebeb;
+    line-height: 2;
+    
+}
+section .container .secondbox span{
+    margin-right: 40px;
+}
+section .container .secondbox progress{
+    margin-left: auto;
+
+}
+
+/*
+h2{
+    background:  #FFFFFF;
+}
+*/ section .container .firstbox > img{
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+} 
+/*section .container .firstbox .namebox{
+    position: relative;
+    padding:0 30px;
+    width: 100%;
+    background:  #FFFFFF;
+}
+section .container .firstbox .namebox2{
+    position: absolute;
+    right: 0;
+    top:0;
+    background:  #FFFFFF;
+}
+section .container .firstbox .namebox p,section .container .firstbox .namebox .namebox2 p{
+    font-size: 20px;
+    background:  #FFFFFF;
+}
+section .container .firstbox .namebox .about{
+    margin-top: 40px;
+    max-width: 800px;
+} */
+.project{
+    float: right;
+}

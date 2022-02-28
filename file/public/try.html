@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+.grid-container {
+  margin: auto;
+    width: 80%;
+  display: grid;
+  grid-gap: 10px;
+  background-color: #d1d3d4;
+  padding: 10px;
+}
+
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin-left: 25px;
+  
+}
+.grid-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.grid-item3 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  
+}
+.item4{
+  grid-column: 2 / span 3;
+  
+}
+.item1 {
+  grid-column: 1 / span 1;
+  grid-row: 1;  /*check the span to see what to do about it */
+}
+
+.item2 {
+  grid-column: 2 /span 3;
+  grid-row: 1 ;
+  
+}
+.item3 {
+  grid-column: 2 /span 3;
+  grid-row: 2 ;
+}
+.item5{
+  grid-column: 2 / span 3;
+  
+}
+
+.item6{
+  grid-column: 1 ;
+  grid-row:2 / span 2 ;
+  
+}
+
+
+.firstbox{
+    /* /display: flex; */
+    max-width: 17rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:  #f5f1f1;
+    
+}
+.secondbox{
+    /* /display: flex; */
+    /* max-width: 30rem; */
+    width: 300px;
+    padding: 10px;
+    height: 280px;
+    border-radius: 5px;
+    background:  white;
+
+   
+}
+ .secondbox .alltogether{
+   display:flex;
+   width:100px;
+}
+.thirdbox .alltogether{
+    display:flex;
+    
+    }
+   .secondbox .spans,.thirdbox .spans{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+ .secondbox .prog,.thirdbox .prog{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+.thirdbox{
+    /* /display: flex; */
+    width: 16rem;
+    padding: 10px;
+    height: 150px;
+    border-radius: 5px;
+    background:  white;
+    line-height: 2;
+    
+}
+ .secondbox span{
+    margin-right: 40px;
+}
+.secondbox progress{
+    margin-left: auto;
+
+}
+ .pics{
+  /* background-image: url(./img/Screenshot_20220131_112710_com.whatsapp.jpg); */
+  width: 300px;
+  height: 270px;
+}
+.white{
+  color: white;
+}
+</style>
+</head>
+
+
+
+<body>
+<div class="grid-container">
+  <div class="grid-item1 item1 firstbox">
+    <div class="imgs ">
+    <img src="./img/Screenshot_20220131_112710_com.whatsapp.pg">
+    </div>
+               
+    <h2 class="text-xl font-bold">Oke Kolawole Sunday</h2>
+    <p>Front-End Developer</p>
+
+   
+        <p>Okekolawole@gmail.com</p>
+        <p>08044449584</p>
+     
+        <div class="about">
+            <p>Self motivated developer, who is willing to learn and create understanding Ui application
+            <br>  
+            <br>
+                Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie. </p>
+           </div>
+  </div>
+
+  
+  <div class="grid-item2 item2 rounded-md">
+        <div class="secondbox">
+          <h2 class="text-xl font-bold">Front-end</h2>
+
+          <div class="alltogether">
+              <div class="spans">
+                  <span>React</span>
+                  <span>Vue</span>
+                  <span>Css</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>React Native</span>
+            </div>
+              <div class="prog">
+                  <progress class="c-blue-600 h-[10px] rounded-md" value="35" max="100"></progress>
+                                  
+                  <progress class="c-blue-600 h-[10px] rounded-md" value="35" max="100"></progress>
+                              
+                  <progress class="c-blue-600 h-[10px] rounded-md" value="35" max="100"></progress>
+                  
+                  
+                  <progress class="c-blue-600 h-[10px] rounded-md"  value="35" max="100"></progress>
+                              
+                  <progress class="c-blue-600 h-[10px] rounded-md"  value="35" max="100"></progress>
+                  
+                  <progress  class="c-blue-600 h-[10px] rounded-md" value="35" max="100"></progress>
+            </div>
+        </div>
+
+     </div>
+
+
+      <div class="thirdbox">
+          
+              <h2 class="text-xl font-bold">Design</h2>
+          <div class="alltogether">
+
+              <div class="spans">
+                  <span >React</span>
+
+                  <span>Photoshop</span>
+                  
+              </div>
+              <div class="prog">
+                  <progress class="c-blue-600 h-[10px] rounded-md" value="35" max="100"></progress>
+                                  
+                  <progress class="c-blue-600 h-[10px] rounded-md" value="35" max="100"></progress>
+              </div>
+         </div>
+
+    </div>
+   
+  </div>
+    <div class="grid-item3 item3 fourthbox rounded-md">
+        <div class="project w-[100%] h-[45px] rounded-md bg-gray-400 px-6 ">
+          <h2 class="p-3">Projects (3)</h2>
+      </div>
+
+    </div>
+  
+    <div class="grid-item3 item4 fifthbox rounded-md h-[330px]">
+      <div class="project w-[100%] h-[45px] rounded-md p-3  flex">
+        <div class="pics rounded-md">
+          <img  class="pics rounded md" src="./img/Screenshot_20220131_112710_com.whatsapp.jpg" alt="">
+        </div>
+        <div class="works w-[350px] pl-5 ">
+              <div class="inline-flex w-[200px] justify-between mb-6">
+              <p class="font-bold">#Html</p>
+              <p class="font-bold">#Css</p>
+              <p class="font-bold">#Responsive</p>
+              </div>
+
+              <h2 class="text-xl font-bold mb-4">My Gallery</h2>
+
+              <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. ut quidem eveniet odio autem modi debitis pariatur, 
+                placeat accusamus atque? Unde esse voluptates corporis odio architecto velit repudiandae.</p>
+
+                <button class="white bg-indigo-600 p-1 rounded-md w-[100px] mr-3">Demo</button>
+
+                <button class="border-solid border-2 border-indigo-600 p-1 rounded-md w-[100px]"> Code</button>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="grid-item3 item4 fifthbox rounded-md h-[330px]">
+    <div class="project w-[100%] h-[45px] rounded-md p-3  flex">
+      <div class="pics rounded-md">
+        <img  class="pics rounded md" src="./img/Screenshot_20220131_112710_com.whatsapp.jpg" alt="">
+      </div>
+      <div class="works w-[350px] pl-5 ">
+            <div class="inline-flex w-[200px] justify-between mb-6">
+            <p class="font-bold">#Html</p>
+            <p class="font-bold">#Css</p>
+            <p class="font-bold">#Responsive</p>
+            </div>
+
+            <h2 class="text-xl font-bold mb-4">My Gallery</h2>
+
+            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. ut quidem eveniet odio autem modi debitis pariatur, 
+              placeat accusamus atque? Unde esse voluptates corporis odio architecto velit repudiandae.</p>
+
+              <button class="white bg-indigo-600 p-1 rounded-md w-[100px] mr-3">Demo</button>
+
+              <button class="border-solid border-2 border-indigo-600 p-1 rounded-md w-[100px]"> Code</button>
+      </div>
+  </div>
+
+</div>
+<div class="grid-item3 item4 fifthbox rounded-md h-[330px]">
+  <div class="project w-[100%] h-[45px] rounded-md p-3  flex">
+    <div class="pics rounded-md">
+      <img  class="pics rounded md" src="./img/Screenshot_20220131_112710_com.whatsapp.jpg" alt="">
+    </div>
+    <div class="works w-[350px] pl-5 ">
+          <div class="inline-flex w-[200px] justify-between mb-6">
+          <p class="font-bold">#Html</p>
+          <p class="font-bold">#Css</p>
+          <p class="font-bold">#Responsive</p>
+          </div>
+
+          <h2 class="text-xl font-bold mb-4">My Gallery</h2>
+
+          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. ut quidem eveniet odio autem modi debitis pariatur, 
+            placeat accusamus atque? Unde esse voluptates corporis odio architecto velit repudiandae.</p>
+
+            <button class=" white bg-indigo-600 p-1 rounded-md w-[100px] mr-3">Demo</button>
+
+            <button class="border-solid border-2 border-indigo-600 p-1 rounded-md w-[100px]"> Code</button>
+    </div>
+</div>
+
+</div>
+    
+<div class="grid-item1 item6 firstbox">
+  <div class="imgs ">
+  <img src="./img/Screenshot_20220131_112710_com.whatsapp.pg">
+  </div>
+             
+  <h2 class="text-xl font-bold">Oke Kolawole Sunday</h2>
+  <p>Front-End Developer</p>
+
+ 
+      <p>Okekolawole@gmail.com</p>
+      <p>08044449584</p>
+   
+      <div class="about">
+          <p>Self motivated developer, who is willing to learn and create understanding Ui application
+          <br>  
+          <br>
+              Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie. </p>
+         </div>
+</div>
+ 
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/css/tryit.asp?filename=trycss_grid_item by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2020 02:28:02 GMT -->
+</html>
